@@ -1,0 +1,59 @@
+<article
+id="sobremi"
+  class="flex flex-col items-center justify-center md:flex-row"
+  >
+  <div
+    class=""
+  >
+  <h2 class="label font-bold my-1">Sobre mi</h2>
+  <div class="flex flex-col gap-4 justify-center items-center p-1 md:flex-row">
+    <div>
+    <img class="rounded-full" src="/sobremi.jpg" alt="Foto casual" width="250px">
+  </div>
+  <div>
+    <p class="">
+      Me llamo Damián Federico Bastos algunos me dicen "Damián" otros simplemente me dicen
+      "Fede". Empecé en la programación de forma autodidacta hace 3 años.
+      Actualmente llevo <strong
+        >muchos proyectos realizados a nivel académico y a nivel freelancer</strong
+      >.
+    </p>
+    <p>
+      Algunos de ellos incluyen Ecommerce. Con utilidades como,
+      carro de compra. pasarela de pago y panel administrativo.
+    </p>
+    <p>
+      Como proyectos academicos,
+        cuento con experiencia en Backend con
+        <em class="italic"> Java y Nodejs</em>. Y en Frontend <em class="italic">React y Vue</em> 
+    </p>
+  </div>
+</div>
+  </div>
+</article>
+
+<style>
+  .label {
+    position: relative;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #B9314F;
+    font-weight: bold;
+    width: 7rem;
+    height: 2rem;
+    line-height: 1rem; /* Centra verticalmente el texto */
+  }
+
+  /* Punta en la derecha */
+  .label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 20px solid #B9314F;
+  }
+</style>

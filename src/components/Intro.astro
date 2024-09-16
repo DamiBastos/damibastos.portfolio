@@ -1,0 +1,62 @@
+<article class="my-6 flex flex-col justify-center items-center gap-2 md:flex-row md:justify-center md:gap-5">
+    <div class="neon-border-wrapper ">
+      <img class="profile-image" src="./perfil.jpg" alt="Foto perfil" width="200px">
+    </div>
+  
+    <div class="flex flex-col items-center md:w-2/3">
+      <div>
+        <h1 class="font-bold text-2xl">Damián Federico Bastos</h1>
+      </div>
+      <div class="p-4">
+        <h2 class="italic">2 años de experiencia. Desarrollador Web Full Stack especializado en la creación de aplicaciones web innovadoras y soluciones escalables. Apasionado por transformar ideas en productos digitales eficientes y centrados en el usuario.</h2>
+       
+      </div>
+      <div>
+        <i class="icono fa-brands fa-js fa-2xl"></i>
+        <i class="fa-brands fa-java fa-2xl"></i>
+        <i class="fa-brands fa-dart-lang fa-2xl"></i>
+        <i class="fa-brands fa-react fa-2xl"></i>
+        <i class="fa-brands fa-flutter fa-2xl"></i>
+        <i class="fa-brands fa-bootstrap fa-2xl"></i>
+        <i class="fa-brands fa-html5 fa-2xl"></i>
+        <i class="fa-brands fa-css3-alt fa-2xl"></i>
+        <i class="fa-brands fa-node-js fa-2xl"></i>
+      </div>
+    </div>
+  </article>
+  
+  <style>
+    /* Contenedor que aplicará el borde con gradiente */
+    .neon-border-wrapper {
+      display: inline-block;
+      padding: 6px; /* Espacio para el borde */
+      border-radius: 50%; /* Bordes redondeados */
+      background: linear-gradient(45deg, #a6c0fe, #f68084); /* Colores más suaves */
+      animation: neon-border-animation 1s infinite alternate; /* Animación continua */
+    }
+  
+    /* Imagen dentro del contenedor, también circular */
+    .profile-image {
+      display: block;
+      border-radius: 50%; /* Imagen circular */
+      width: 200px;
+      height: 200px;
+    }
+  
+    /* Animación del borde gradiente con colores suaves */
+    @keyframes neon-border-animation {
+      0% {
+        background: linear-gradient(45deg, #a6c0fe, #f68084);
+      }
+      50% {
+        background: linear-gradient(45deg, #f68084, #ffd3a5);
+      }
+      100% {
+        background: linear-gradient(45deg, #ffd3a5, #a6c0fe);
+      }
+    }
+    .i{
+      font-size: 3rem;
+    }
+  </style>
+  

@@ -1,0 +1,55 @@
+---
+import Proyecto from "./Proyecto.astro"
+
+const proyectos = [
+    {
+        titulo: "Shoes Market",
+        descripcion:"Comercio electrónico de calzados con listado de productos, filtrado, carrito y administrado completo servido para que el cliente pueda crear, editar y eliminar productos.",
+        imagen:"/proyectos/shoesmarket.jpg",
+        url: "https://shoesmarket.com.ar"
+    },
+    {
+        titulo: "Musa Galería",
+        descripcion:"Proyecto académico que muestra una galeria de arte hecha con html, css, bootstrap, javascript para el front y un backend hecho con java y springboot",
+        imagen:"/proyectos/musagaleria.jpg",
+        url: "https://github.com/DamiBastos/gallery-art"
+    }
+]
+---
+
+<div id="proyectos">
+    <h2 class="label font-bold my-1">Proyectos</h2>
+    <div class="flex flex-col gap-2">
+    {
+    proyectos.map((proyecto) => (
+         <Proyecto {...proyecto} />
+    ))
+    }
+    </div>
+</div>
+
+<style>
+    .label {
+      position: relative;
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #B9314F;
+      font-weight: bold;
+      width: 7rem;
+      height: 2rem;
+      line-height: 1rem; /* Centra verticalmente el texto */
+    }
+  
+    /* Punta en la derecha */
+    .label::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 0;
+      height: 0;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+      border-left: 20px solid #B9314F;
+    }
+  </style>

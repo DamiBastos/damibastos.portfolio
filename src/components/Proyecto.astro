@@ -1,0 +1,42 @@
+---
+interface Props{
+    titulo:string,
+    descripcion:string,
+    imagen:string,
+    url:string
+}
+
+const {titulo, descripcion, imagen, url} = Astro.props
+
+---
+
+<div class="flex flex-col justify-center items-center border-2 rounded p-2 bg-[#DEC3BE] border-[#D5A18E] md:flex-row md:items-start md:justify-between">
+    
+    <div class=" w-full md:w-1/3 ">
+    <div  class="w-full flex flex-col justify-center items-center">
+    <span class="text-xs">PROYECTO</span>
+    <h1 class="w-full text-center bg-[#D5A18E] font-bold p-1">{titulo}</h1>
+</div>
+<div class="w-full flex flex-col justify-center items-center"><span class="text-xs">VISTA</span>
+    <img src={imagen} alt={titulo}>
+</div>
+</div>
+<div class="w-full h-full md:w-2/3 md:p-2">
+    <div class="w-full h-full flex flex-col justify-center items-center md:justify-between">
+        <div class="w-full">
+    <span class="text-xs">DESCRIPCION</span>
+    </div>
+    <div class="w-full h-full">
+
+    <p class="w-full text-start bg-[#D5A18E] p-1">{descripcion}</p>
+    <a href={url}>Visitar!</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<style>
+    div{
+    }
+</style>
