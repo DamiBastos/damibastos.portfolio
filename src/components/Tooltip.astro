@@ -1,0 +1,11 @@
+---
+const {texto} = Astro.props
+---
+
+<div class="relative group">
+    <slot/>
+    <div class="absolute hidden group-hover:flex items-center justify-center bg-black text-white text-sm rounded py-1 px-2 top-full mt-2 w-32">
+      {texto}
+    </div>
+  </div>
+  
